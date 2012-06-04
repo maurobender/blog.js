@@ -1,7 +1,12 @@
-{ "development":
-  { "driver":   "memory"
-  }
-, "test":
-  { "driver":   "memory"
-  }
+{
+	"development": { 
+	  "driver":   "memory"
+	},
+  "test": { 
+	  "driver":   "memory"
+	},
+	"production": {
+		"driver" : "mongoose",
+		"url"    : "mongodb://nodejitsu:250258bf7ca25895e1b6fa887588ab51@staff.mongohq.com:10035/nodejitsudb583070830179"
+	}
 }
